@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    .font-serif-aesthetic { font-family: 'Cormorant Garamond', serif; }
+    .font-sans-aesthetic { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="font-sans-aesthetic bg-[#F9F7F2] text-stone-800">
+
+  <nav class="sticky top-0 z-50 bg-[#F9F7F2]/80 backdrop-blur-md px-10 py-6 flex justify-between items-center">
+    <div class="text-2xl font-semibold tracking-widest uppercase font-serif-aesthetic">Home Goods</div>
+    <ul class="hidden md:flex gap-12 text-[11px] uppercase tracking-[0.2em] font-medium">
+      <li class="cursor-pointer hover:text-stone-500">Shop All</li>
+      <li class="cursor-pointer hover:text-stone-500">Our Story</li>
+      <li class="cursor-pointer hover:text-stone-500">Journal</li>
+    </ul>
+    <div class="flex gap-6 text-[11px] uppercase tracking-widest">
+      <span class="cursor-pointer">Login</span>
+      <span class="font-bold cursor-pointer">Cart (0)</span>
+    </div>
+  </nav>
+
+  <header class="px-6 py-6 md:px-10">
+    <div class="relative h-[80vh] w-full rounded-[2rem] overflow-hidden shadow-sm">
+      <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2128&auto=format&fit=crop" 
+           alt="Interior Design" 
+           class="object-cover w-full h-full">
+      <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white bg-black/10">
+        <h1 class="mb-6 text-6xl md:text-8xl font-serif-aesthetic">Organic Living</h1>
+        <p class="text-sm md:text-lg uppercase tracking-[0.4em] mb-10 font-light">Thoughtfully Curated For Your Home</p>
+        <button class="bg-white text-stone-800 px-12 py-4 text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-stone-800 hover:text-white transition-all rounded-full">
+          Shop the Collection
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="max-w-3xl px-6 py-32 mx-auto text-center">
+    <span class="text-stone-400 text-[10px] uppercase tracking-[0.3em] block mb-6">Our Philosophy</span>
+    <h2 class="mb-8 text-4xl italic leading-snug md:text-5xl font-serif-aesthetic">
+      Bringing the calm of nature into the heart of your home.
+    </h2>
+    <p class="font-light leading-loose text-stone-500">
+      Every piece in our collection is selected for its sustainability, craftsmanship, and timeless aesthetic. 
+      We believe that the objects you surround yourself with should tell a story of quality and care.
+    </p>
+  </section>
+
+  <section class="px-10 pb-32">
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+      
+      <div class="cursor-pointer group">
+        <div class="aspect-[4/5] bg-stone-200 rounded-3xl overflow-hidden mb-6 relative">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1974&auto=format&fit=crop" 
+               class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105">
+          <span class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-[9px] uppercase tracking-widest font-bold">New</span>
+        </div>
+        <h3 class="text-2xl font-serif-aesthetic">Ceramic Vase</h3>
+        <p class="mt-1 text-xs tracking-widest uppercase text-stone-400">Handmade In Portugal</p>
+        <p class="mt-4 text-sm font-bold">$45.00</p>
+      </div>
+
+      <div class="cursor-pointer group">
+        <div class="aspect-[4/5] bg-stone-200 rounded-3xl overflow-hidden mb-6">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.MRL5-YCCFfGv38KSzZZgXQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 
+               class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105">
+        </div>
+        <h3 class="text-2xl font-serif-aesthetic">Linen Throw</h3>
+        <p class="mt-1 text-xs tracking-widest uppercase text-stone-400">100% Organic Linen</p>
+        <p class="mt-4 text-sm font-bold">$120.00</p>
+      </div>
+
+      <div class="cursor-pointer group">
+        <div class="aspect-[4/5] bg-stone-200 rounded-3xl overflow-hidden mb-6">
+          <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2069&auto=format&fit=crop" 
+               class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105">
+        </div>
+        <h3 class="text-2xl font-serif-aesthetic">Oak Side Table</h3>
+        <p class="mt-1 text-xs tracking-widest uppercase text-stone-400">Sustainably Sourced</p>
+        <p class="mt-4 text-sm font-bold">$280.00</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="px-10 py-20 border-t bg-stone-100 border-stone-200">
+    <div class="grid gap-12 mx-auto md:grid-cols-4 max-w-7xl">
+      <div class="col-span-2">
+        <div class="mb-6 text-xl tracking-widest uppercase font-serif-aesthetic">Home Goods</div>
+        <p class="max-w-xs text-sm text-stone-400">Subscribe to our journal for design tips and exclusive early access to new collections.</p>
+        <div class="flex pb-2 mt-8 border-b border-stone-300">
+          <input type="email" placeholder="Email Address" class="w-full text-sm bg-transparent outline-none">
+          <button class="text-[10px] font-bold uppercase tracking-widest">Join</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
